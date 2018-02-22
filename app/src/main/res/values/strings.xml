@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">부산 스마트 \n 무인 관광 해설사</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="btn_yes">확인</string>
+    <string name="btn_no">닫기</string>
+    <string name="title_activity_noti_list">스탬프알림서비스</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="log_tag">BusanSmartCity</string>
+    <string name="video_path">/BusanSmartCityCultureTourGuide/video/</string>
+    <!--<string name="web_path">http://192.168.174.204:8080</string>-->
+    <string name="web_path">http://211.220.63.139:8080</string>
+</resources>

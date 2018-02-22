@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.ubitec.smartbusanculturetourguide.FunctionTestActivity"
+    tools:layout_editor_absoluteY="89dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="619dp"
+        android:text="Hello World!"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="23dp"
+        app:layout_constraintRight_toLeftOf="@+id/btnGetWeather"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCheckLocation"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:text="위치확인"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetNearContsStop" />
+
+    <Button
+        android:id="@+id/btnGetNearContsStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쓰레드 시작"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnGetNearContsStop"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnGetNearContsStop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGetNearContsStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="쓰레드 종료"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnCheckLocation"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetNearContsStart"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/btnCheckLocation" />
+
+    <Button
+        android:id="@+id/btnCallVideoPop"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="비디오팝업"
+        android:layout_marginStart="25dp"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginEnd="26dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnGetWeather"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/textView1" />
+
+    <Button
+        android:id="@+id/btnGetWeather"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:text="날씨정보확인"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/btnCheckLocation"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCheckLocation" />
+
+</android.support.constraint.ConstraintLayout>

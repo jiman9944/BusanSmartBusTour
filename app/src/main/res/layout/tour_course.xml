@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.9"
+            android:background="#3399ff">
+
+            <ImageView
+                android:id="@+id/back_button_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:onClick="onClick_button"
+                android:src="@drawable/back_button"/>
+
+            <TextView
+                android:id="@+id/course_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:paddingLeft="40dp"
+                android:text="TextView"
+                android:textColor="#fff"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:id="@+id/home_button_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:onClick="onClick_button"
+                android:src="@drawable/home_button"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/courseimg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical"
+            android:layout_weight="0.1"
+            android:background="@drawable/courseinfo_ko">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="300dp">
+
+                <Button
+                    android:id="@+id/busanMuseum"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="213dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/yongHoman"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="50dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/gwangalli"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/arpina"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/marineCity"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/dongBaek"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="50dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/haeundea"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="260dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:layout_marginRight="835dp"
+                        android:layout_marginLeft="160dp">
+
+                        <Button
+                            android:id="@+id/un"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="35dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="#00ff0000"
+                            android:onClick="onClick_button"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="55dp"
+                        android:layout_height="120dp"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp">
+
+                        <Button
+                            android:id="@+id/centum"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="#00ff0000"
+                            android:onClick="onClick_button"/>
+
+                        <Button
+                            android:id="@+id/busanCinema"
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:layout_marginTop="13dp"
+                            android:background="#00ff0000"
+                            android:onClick="onClick_button"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="270dp"
+                android:layout_marginRight="270dp">
+
+                <Button
+                    android:id="@+id/busanHarbor"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/busanStation"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/gwangBok"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/busanHarbor2"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/peacePark"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/gwanganBridge"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+
+                <Button
+                    android:id="@+id/busanMuseumOfArt"
+                    android:layout_width="15dp"
+                    android:layout_height="55dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="40dp"
+                    android:background="#00ff0000"
+                    android:onClick="onClick_button"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

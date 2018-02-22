@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="kr.co.ubitec.smartbusanculturetourguide.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:background="@drawable/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/logo"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:paddingRight="350dp"/>
+
+            <ImageButton
+                android:id="@+id/course_info"
+                android:layout_width="343dp"
+                android:layout_height="63dp"
+                android:layout_weight="0.5"
+                android:src="@drawable/course_ko"
+                android:layout_gravity="right|center"
+                android:background="#00ff0000"
+                android:paddingLeft="450dp"
+                android:scaleType="centerInside"
+                android:onClick="onClick_button"
+                android:layout_marginRight="40dp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/lat"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:text="TextView"-->
+                <!--android:layout_gravity="right"/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/lng"-->
+                <!--android:layout_width="200dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="0.4"-->
+                <!--android:text="TextView" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/video_test"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:text="Button"-->
+                <!--android:gravity="right"-->
+                <!--android:layout_gravity="right"-->
+                <!--android:onClick="onClick_button"/>-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.6"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_button"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_button"
+
+                />
+
+            <ImageView
+                android:id="@+id/imageButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_button"
+
+
+                />
+            <ImageView
+                android:id="@+id/imageButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_button"
+
+
+                />
+            <ImageView
+                android:id="@+id/imageButton5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:onClick="onClick_button"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="80dp"
+                android:layout_height="90dp"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:src="@drawable/language"
+                android:paddingTop="20dp"
+                android:paddingBottom="5dp"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/buttonKor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="한국어"
+                android:textSize="23dp"
+                android:textColor="#fff"
+                android:background="#00ff0000"
+                android:onClick="onClick_button"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/buttonEng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="English"
+                android:textSize="23dp"
+                android:textColor="#fff"
+                android:background="#00ff0000"
+                android:onClick="onClick_button"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/buttonChi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Chinese"
+                android:textSize="23dp"
+                android:textColor="#fff"
+                android:background="#00ff0000"
+                android:onClick="onClick_button"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/buttonJpn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Japanese"
+                android:textSize="23dp"
+                android:textColor="#fff"
+                android:background="#00ff0000"
+                android:onClick="onClick_button"
+                android:layout_marginTop="20dp"/>
+
+            <ImageButton
+                android:id="@+id/button_app"
+                android:layout_width="200px"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:src="@drawable/button_app_ko"
+                android:paddingTop="20dp"
+                android:paddingBottom="15dp"
+                android:onClick="onClick_button"
+                android:layout_gravity="right"
+                android:scaleType="fitCenter"
+                android:background="#00ff0000"
+                android:layout_marginRight="30dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

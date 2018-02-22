@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.9"
+            android:weightSum="1"
+            android:background="#3399ff"
+            >
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:onClick="onClick_button"
+                android:src="@drawable/back_button"/>
+
+            <TextView
+                android:id="@+id/list_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:text="TextView"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:textSize="40dp"
+                android:paddingLeft="40dp"/>
+
+            <ImageView
+                android:id="@+id/home_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.45"
+                android:onClick="onClick_button"
+                android:src="@drawable/home_button"/>
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            app:spanCount="5"
+            android:layout_weight="0.1"
+            android:layout_marginTop="20dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
